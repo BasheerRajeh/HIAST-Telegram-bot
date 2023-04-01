@@ -1,63 +1,75 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# HIAST Telegram Bot - Admin Page
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![HIAST Logo](https://hiast.edu.sy/sites/default/files/hiast-logo-ar4_0_3.png)
 
-## About Laravel
+## Project Description
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This PHP application is built using Laravel 7 and is designed to create a Telegram Bot Admin Page for the Higher Institute for Applied Sciences and Technology (HIAST) (https://hiast.edu.sy/). The Telegram bot provides various services for students, making their university life more convenient and accessible.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- User-friendly interface for managing the Telegram bot
+- Integration with HIAST's existing systems and databases
+- Secure authentication and authorization for admins
+- Wide range of student services, including course registration, exam schedules, and more
 
-## Learning Laravel
+## Database Structure
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The database structure for this application can be found at the following link: https://github.com/BasheerRajeh/HIAST-Telegram-bot/blob/main/database.png
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Installation & Setup
 
-## Laravel Sponsors
+1. Clone the repository:
+   ```
+   git clone https://github.com/BasheerRajeh/HIAST-Telegram-bot.git
+   ```
+2. Navigate to the project folder and install the required dependencies using Composer:
+   ```
+   cd HIAST-Telegram-bot
+   composer install
+   ```
+3. Create a copy of the `.env.example` file and rename it to `.env`:
+   ```
+   cp .env.example .env
+   ```
+4. Generate an application encryption key:
+   ```
+   php artisan key:generate
+   ```
+5. Configure your database settings in the `.env` file.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+6. Migrate and seed the database:
+   ```
+   php artisan migrate --seed
+   ```
+7. Set up a local development server:
+   ```
+   php artisan serve
+   ```
+8. Visit `http://127.0.0.1:8000` in your web browser to access the admin panel.
 
-### Premium Partners
+## Usage
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
+1. Log in to the admin panel using the credentials provided during installation.
+
+2. Navigate to the Telegram bot management section to add, edit, or remove bot functionalities.
+
+3. Use the provided tools to monitor and manage student services, such as course registrations and exam schedules.
+
+4. Keep track of important metrics and statistics to ensure the smooth operation of the Telegram bot.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Contributions are welcome. To contribute, please follow these steps:
 
-## Code of Conduct
+1. Fork the project repository.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+2. Create a new branch for your feature or bug fix.
 
-## Security Vulnerabilities
+3. Commit your changes and push them to your fork.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+4. Open a pull request with a clear description of your changes.
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
