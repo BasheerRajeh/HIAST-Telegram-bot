@@ -1,6 +1,6 @@
 # HIAST Telegram Bot - Admin Page
 
-![HIAST Logo](https://hiast.edu.sy/sites/default/files/hiast-logo-ar4_0_3.png)
+![HIAST Logo](https://i.imgur.com/yUdFqdx.png)
 
 ## Project Description
 
